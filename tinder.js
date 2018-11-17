@@ -70,8 +70,12 @@ $(document).ready(function() {
 
 $(document).on("pagecreate", "#page2", function(){
   
-  $("input[name='radio-choice-3'][value='"+fields.gender +"']").prop('checked', true);
+  //לאתחל בערכים שהוזנו בדף הקודם
+  $("input[name='radio-choice-3'][value='"+fields.gender +"']").prop('checked', true).checkboxradio('refresh');
+  $("#slider-9").val(fields.minAge);
+  $("#slider-10").val(fields.maxAge);
 
+  //להביא את הערכים החדשים שהמשתמש הזין
   $("#radio-choice-31").click(function(){
     Pgender="female";
    });
@@ -116,12 +120,14 @@ class Profile {
 // create the render function
   Render() {
     var str = "<div class = 'person'>";
-    str += "<button  class='ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-notext' onclick='Next()'></button>";
+    str += "<div id='container'>"
+    str += "<button id='button1'   class='ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-notext' onclick='Next()'></button>";
     str += "<img  id='imgperson' src='" + this.image + "'/>";
-    str += "<button  class='ui-btn ui-btn-inline ui-icon-star ui-btn-icon-notext' onclick='Next()'></button>";
+    str += "<button id='button2'   class='ui-btn ui-btn-inline ui-icon-heart ui-btn-icon-notext' onclick='Next()'></button>";
+    str +="</div>"
     str += "<p> My name is " + this.name + "</p>";
     str += "<p> Gender: " + this.gender + "</p>";
-    str += "<p> Age: " + this.age + "years </p>";
+    str += "<p> Age: " + this.age + " years </p>";
     str += "<p> Height:" + this.height + "</p>";
     str += "<p> From: " + this.location + "</p>";
     str += "<p> Premium: " + this.premium + "</p>";
@@ -139,9 +145,11 @@ class Premium extends Profile {
 // create the render function
   Render() {
     var str = "<div class = 'person'>";
-    str += "<button  class='ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-notext buttons' onclick='Next()'></button>";
+    str += "<div id='container'>"
+    str += "<button id='button1'   class='ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-notext' onclick='Next()'></button>";
     str += "<img  id='imgperson' src='" + this.image + "'/>";
-    str += "<button  class='ui-btn ui-btn-inline ui-icon-star ui-btn-icon-notext buttons' onclick='Next()'></button>";
+    str += "<button id='button2'   class='ui-btn ui-btn-inline ui-icon-heart ui-btn-icon-notext' onclick='Next()'></button>";
+    str +="</div>"
     str += "<p> My name is " + this.name + "</p>";
     str += "<p> Gender: " + this.gender + "</p>";
     str += "<p> Age: " + this.age + " years</p>";

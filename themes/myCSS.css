@@ -19,8 +19,10 @@ div #imag .img{
     border-color:#000000;
 }
 #imgperson{
+    padding-top:20px;
     height:200px ;
     width:200px;
+    display:inline-block;
 }
 /* .ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-notext{
     margin-top: 100px;
@@ -28,6 +30,12 @@ div #imag .img{
     margin-right: 150px;
     margin-left: 80px;
 } */
-.buttons{
-display: inline
+#button1 , #button2 {
+    display:inline-block;
+    margin-left: 10px;
+
+
 }
+    #container{
+        text-align: center;
+    }
