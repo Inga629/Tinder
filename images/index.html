@@ -1,0 +1,105 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Theme Download</title>
+	<link rel="stylesheet" href="themes/b.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<link rel="stylesheet" href="themes/myCSS.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="tinder.js"></script>
+</head>
+// create an html page with preferences input fields, find button and an image place holder, 
+    // like and next buttons the preferences inupt fields are gender and age range
+    // (e.g female 50 - 60) . 
+    // * use the proper input field types
+	
+<body>
+	<!-- page 1 -->
+	<div data-role="page" data-theme="a" id="page1">
+		<div data-role="header" data-position="inline">
+			<h1>Find My Love</h1> 
+		</div>
+		<div data-role="content" data-theme="a">
+			<div  data-role="fieldcontain"  >
+				<fieldset data-mini="true" data-role="controlgroup">
+					<legend>Gender:</legend>
+						 <input type="radio" name="radio-choice-2" id="radio-choice-female" value="female" checked="checked"  />
+						 <label for="radio-choice-female">female</label>
+						 <input type="radio" name="radio-choice-2" id="radio-choice-male" value="male"  />
+						 <label for="radio-choice-male">male</label>
+				</fieldset>
+			</div>
+			<form>
+				<div data-role="fieldcontain">
+					<label for="slider-7">Min Age:</label>
+					<input type="range" name="slider-7" id="slider-7" min="18" max="100" value="50">
+					<label for="slider-8">Max Age:</label>
+					<input type="range" name="slider-8" id="slider-8" min="18" max="100" value="50">
+				</div>
+				<center>
+				<a id="find" href="#page2" data-role="button" data-icon="search" data-inline="true"  >Find</a>
+			</center>
+			</form>
+			
+			<div id="imag">
+				<img class="img" src=https://spectrumhealthcare.com/uploads/images/Heart-Month_1.jpg/>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<!-- <ul>
+					<li><a href="#" data-icon="grid" class="ui-btn-active">Summary</a></li>
+					<li><a href="#" data-icon="star">Favs</a></li>
+					<li><a href="#" data-icon="gear">Setup</a></li>
+				</ul> -->
+			</div> <!-- /navbar -->
+		</div>
+	</div>
+
+
+	<!-- page 2 -->
+	<div data-role="page" data-theme="a" id="page2">
+			<div data-role="header" data-position="inline">
+				<h1>Find My Love</h1> 
+			</div>
+			<div data-role="content" data-theme="a">
+				<div  data-role="fieldcontain"  >
+					<fieldset data-mini="true" data-role="controlgroup">
+						<legend>Gender:</legend>
+							 <input type="radio" name="radio-choice-2" id="radio-choice-21" value="choice-1" checked="checked"  />
+							 <label for="radio-choice-21">female</label>
+							 <input type="radio" name="radio-choice-2" id="radio-choice-22" value="choice-2"  />
+							 <label for="radio-choice-22">male</label>
+					</fieldset>
+				</div>
+				<form>
+					<div data-role="fieldcontain">
+						<label for="slider-7">Min Age:</label>
+						<input type="range" name="slider-7" id="slider-7" min="18" max="100" value="50">
+						<label for="slider-8">Max Age:</label>
+						<input type="range" name="slider-8" id="slider-8" min="18" max="100" value="50">
+					</div>
+					<a href="#" data-role="button" data-icon="search" data-inline="true" >Find</a>
+				</form>
+				
+				<div id="info">
+				
+
+
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<!-- <ul>
+						<li><a href="#" data-icon="grid" class="ui-btn-active">Summary</a></li>
+						<li><a href="#" data-icon="star">Favs</a></li>
+						<li><a href="#" data-icon="gear">Setup</a></li>
+					</ul> -->
+				</div> <!-- /navbar -->
+			</div>
+		</div>
+</body>
+</html>

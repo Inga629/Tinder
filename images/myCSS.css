@@ -1,0 +1,15 @@
+div #imag .img{
+    height:360px ;
+    width:320px;
+    margin: 0px auto;
+    display: block;
+}
+.person img {
+    height: 132px;
+    margin: 0px auto;
+    display: block;
+}
+/* #find{
+    margin: 0px auto;
+    display: block;
+} */
